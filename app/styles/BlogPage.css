@@ -1,0 +1,150 @@
+.create-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background: #4caf50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.create-btn:hover {
+  background: #388e3c;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+}
+
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-heading {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #e0e0e0;
+  background: #f9f9f9;
+  font-size: 0.875rem;
+}
+
+.form-input {
+  height: 2rem;
+}
+
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border: 2px solid #4caf50;
+}
+
+.form-file {
+  border: 1px solid #e0e0e0;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background: #f9f9f9;
+}
+
+.form-btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.submit-btn {
+  background: #4caf50;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  flex: 1;
+}
+
+.submit-btn:hover {
+  background: #388e3c;
+}
+
+.close-btn {
+  background: #f44336;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  flex: 1;
+}
+
+.close-btn:hover {
+  background: #d32f2f;
+}
+
+.blog-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 50vh; /* Ensure space for no-blogs message */
+  justify-content: center;
+  align-items: center;
+}
+
+.no-blogs {
+  font-size: 1.25rem;
+  color: #333333;
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.25rem;
+  width: 100%;
+  max-width: 400px;
+}

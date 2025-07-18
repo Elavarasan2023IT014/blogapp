@@ -1,0 +1,61 @@
+.user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.user-card {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #e0e0e0; /* Light gray border, matching other components */
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background: #ffffff; /* White background */
+}
+
+.user-img {
+  border-radius: 0.25rem;
+  border: 1px solid #e0e0e0; /* Light gray border */
+  max-width: 150px; /* Added for responsiveness */
+  height: auto;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #000000; /* Black for readability */
+}
+
+.user-info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.user-info h2 span {
+  color: #1e88e5; /* Blue, matching register link and admin button */
+}
+
+.user-info h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.pf-signout {
+  padding: 0.5rem;
+  background: #f44336; /* Red, matching signout/delete/close buttons */
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pf-signout:hover {
+  background: #d32f2f; /* Darker red on hover */
+}
