@@ -3,7 +3,7 @@ import React from 'react'
 
 async function page({params}) {
     const {id} = params;
-    const res = await fetch(`http://localhost:3000/api/blog/${id}`);
+    const res = await fetch(`https://blogapp-six-chi.vercel.app/api/blog/${id}`);
     const data = await res.json();
     const blog = data.data;
   return (
